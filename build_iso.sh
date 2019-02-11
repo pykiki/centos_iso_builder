@@ -137,7 +137,7 @@ if [ $numberFound -gt 1 ]; then
     kickstartpath=$(find ${buildir}/kickstarts -type f -iregex ".*$kickstartName.cfg$")
   fi
 else
-  kickstartpath=$(find ${buildir}/kickstarts -type f -iregex ".*$kickstartName.cfg$")
+  kickstartpath=$(find ${buildir}/kickstarts -type f -iregex ".*$kickstartName.*\.cfg$")
 fi
 
 if [ ! -f "$kickstartpath" ]; then
